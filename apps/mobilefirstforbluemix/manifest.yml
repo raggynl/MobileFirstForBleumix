@@ -1,0 +1,14 @@
+applications:
+- services:
+  - MobileFirstOnBluemix-MAS
+  - MobileFirstOnBluemix-Push
+  - MobileFirstOnBluemix-MobileData
+  - MobileFirstOnBluemix-Mobile Quality Assurance
+  disk_quota: 1024M
+  host: mobilefirstonbluemix
+  name: MobileFirstOnBluemix
+  command: node app.js
+  path: .
+  domain: eu-gb.mybluemix.net
+  instances: 1
+  memory: 128M
