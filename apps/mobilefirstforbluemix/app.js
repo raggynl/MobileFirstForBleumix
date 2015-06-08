@@ -14,8 +14,9 @@ var express 	= require('express'),
 ibmbluemix.initialize(config);
 var logger = ibmbluemix.getLogger();
 
+//redirect to cloudcode doc page when accessing the root context
+app.use(express.static(path.join(__dirname, 'common')));
 
-app.use(express.static(path.join(__dirname, 'common')));//instead of setting the public/index.html we give the entire common folder to be used by nodeJS
 // init service sdks 
 app.use(function(req, res, next) {
     req.data = ibmdata.initializeService(req);

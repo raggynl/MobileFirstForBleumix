@@ -1,3 +1,24 @@
+This is a costum setup in order to run Mobile First frontend together with a nodeJS server on bluemix
+
+Structure:
+- apps (Main folder)
+	- mobilefirstforbluemix (Project folder)
+		- common (mobile first Front end web app)
+		- legel (licenses)
+		- lib (library dependecencies nodeJS/bluemix)
+		- node_modules (node JS module dependencies)
+	- application-description.xml (mobile first config)
+	- app.js (starts nodejs server)
+	- manifest.yml (bluemix deployment manifest)
+	- package.json (nodejs depedency list for bleumix)
+	
+	
+Rest Call to te server are done by using Jquery, angularJS or simular framework instead of using worklight packages
+
+You can still create new mobile first envoirments Keep in mind that you need to point to the right server URL this is not handeld through mobilefirst deployment setup
+	
+
+
 Open Getting Started Guide
 -----------------------------------------
 Congratulations on your new Mobile Cloud application!
